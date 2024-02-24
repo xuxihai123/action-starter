@@ -16,8 +16,6 @@ jobs:
       - name: Hello world action step
         id: hello
         uses: ./
-        with:
-          USERNAME: 'xuxihai123'
       # Use the output from the `hello` step
       - name: Get the output time
         run: echo "The time was ${{ steps.hello.outputs.time }}"
