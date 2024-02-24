@@ -1,4 +1,9 @@
-# test_private_action
-test_private_action
+# action-starter
+action-starter
+
+
+# document
+
+https://docs.github.com/zh/actions/creating-actions/about-custom-actions
 
 
