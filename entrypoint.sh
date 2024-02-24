@@ -1,6 +1,8 @@
 #!/bin/sh -l
 
-echo "Hello $USERNAME"
+echo "Hello1 $$1"
+echo "Hello1 $USERNAME1"
+echo "Hello2 $USERNAME2"
 time=$(date)
 echo "time=$time" >> $GITHUB_OUTPUT
 
