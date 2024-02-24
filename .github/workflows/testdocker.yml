@@ -4,15 +4,20 @@ jobs:
   hello_world_job:
     runs-on: ubuntu-latest
     name: A job to say hello2
+    env:
+      USERNAME1: 'xuxihai123'
     steps:
       - name: Checkout
         id: checkout
         uses: actions/checkout@v4
+      - name: setusername2
+        run: |
+          echo "USERNAME2=xiaoyi" >>$GITHUB_ENV
       - name: Hello world action step
         id: hello
         uses: ./.github/actions/docker-demo1
         with:
-          who-to-greet: 'xuxihai'
+          who-to-greet: 'first name'
       # Use the output from the `hello` step
       - name: Get the output time
         run: echo "The time was ${{ steps.hello.outputs.time }}"
