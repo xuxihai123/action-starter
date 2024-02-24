@@ -10,7 +10,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       - name: Hello world action step
-        uses: ./.github/actions/javascript1
+        uses: ./.github/actions/javascript-demo1
         id: hello
         with:
           who-to-greet: 'xuxihai'
